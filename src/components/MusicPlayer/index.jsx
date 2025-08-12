@@ -12,13 +12,15 @@ const MusicPlayer = ({ isDarkMode }) => {
   const [volume, setVolume] = useState(0.5);
   const audioRef = useRef(null);
 
-  const toggleMusicPlayer = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMusicPlayer = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    setIsPlaying(false);
-  }, [isDarkMode]);
+    if (audioRef.current && isPlaying) {
+      audioRef.current.currentTime = 0;
+        audioRef.current.play();
+        setVolume(0.5);
+    }
+  }, [isDarkMode, isPlaying]);
 
   useEffect(() => {
     if (isOpen) {
@@ -39,11 +41,7 @@ const MusicPlayer = ({ isDarkMode }) => {
 
     if (!audio) return;
 
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play();
-    }
+    isPlaying ? audio.pause() : audio.play();
 
     setIsPlaying(!isPlaying);
   };
@@ -54,10 +52,10 @@ const MusicPlayer = ({ isDarkMode }) => {
         <div className={`cassette-body ${isOpen ? "show" : "hide"}`}>
           <div className="cassette-top">
             <div className="cassette-window">
-              <div className={`reel left-reel ${isPlaying ? "" : "spinning"}`}>
+              <div className={`reel left-reel ${isPlaying ? "" : "remove"}`}>
                 <div className="reel-center"></div>
               </div>
-              <div className={`reel right-reel ${isPlaying ? "" : "spinning"}`}>
+              <div className={`reel right-reel ${isPlaying ? "" : "remove"}`}>
                 <div className="reel-center"></div>
               </div>
             </div>
