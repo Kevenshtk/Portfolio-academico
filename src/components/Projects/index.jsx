@@ -20,12 +20,27 @@ const Projects = () => {
       semester: "2° Semestre",
       summary:
         "Jogo que combina conceitos matemáticos com elementos de aventura inspirados em jogos de RPG.",
-      aboutProject: ``,
-      objectiveProject: "",
+      aboutProject: `O projeto foi desenvolvido no 2º semestre do curso durante a disciplina de Cálculo,
+      cursada no primeiro semestre do ano de 2024 e ministrada pelo professor Adriana de Bortoli.
+      O projeto trata-se de um jogos de tabuleiro onde a cada partida  um ou dois jogadores terão que explorar 
+      diferentes tabuleiros, mergulhar em uma história cativante e aprimorar suas habilidades matemáticas.`,
+      objectiveProject: "O objetivo foi desenvolver um jogo que ensina conceitos matemáticos estudados em aula, como:",
       itemsObjective: [
         {
-          title: "",
-          content: "",
+          title: "Funções: ",
+          content: "Funções do 1º grau e 2º grau, coeficientes linear, independente e angular, grau da função.",
+        },
+        {
+          title: "Funções lineares: ",
+          content: "Forma geral, raiz da função e Cálculo do valor de f(x).",
+        },
+        {
+          title: "Funções quadráticas: ",
+          content: "Potenciação (expoente), concavidade da parábola, fórmula do discriminante (Δ), fórmula de Bhaskara e substituição de valores em funções.",
+        },
+        {
+          title: "Derivadas (Cálculo Diferencial): ",
+          content: "Derivadas de potência, constante e polinômios.",
         },
       ],
       techStack: ["HTML", "Sass", "JavaScript", "Node"],
