@@ -7,9 +7,11 @@ import Contact from "./components/Contact";
 import MusicPlayer from "./components/MusicPlayer";
 import BackToTop from "./components/BackToTop";
 
+import { ThemeContext } from "./context/themes";
+
 import { useState, useEffect } from "react";
 
-import "./styles/app.sass"
+import "./styles/app.sass";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -23,21 +25,23 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <main>
-        <Banner />
-        <About isDarkMode={isDarkMode} />
-        <Skills />
-        <Projects />
-        <Contact isDarkMode={isDarkMode} />
-      </main>
-      <MusicPlayer isDarkMode={isDarkMode} />
-      <BackToTop />
-      <div className="background-elements">
-        <div className="floating-particles"></div>
+    <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+      <div className="app">
+        <Header />
+        <main>
+          <Banner />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <MusicPlayer />
+        <BackToTop />
+        <div className="background-elements">
+          <div className="floating-particles"></div>
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

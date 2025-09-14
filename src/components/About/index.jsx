@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context/themes";
+
 import "./styles.sass";
 
-const About = ({ isDarkMode }) => {
+const About = () => {
+  const { isDarkMode } = useContext(ThemeContext);
+
   return (
     <section id="about" className="about">
       <div className="container">
@@ -11,9 +16,7 @@ const About = ({ isDarkMode }) => {
             <div className="profile-image">
               <img
                 src={
-                  isDarkMode
-                    ? "./imgPerfilDark.png"
-                    : "./imgPerfilLight.png"
+                  isDarkMode ? "./imgPerfilDark.png" : "./imgPerfilLight.png"
                 }
                 alt="Keven di Camargo"
               />

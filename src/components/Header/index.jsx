@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { ThemeContext } from "../../context/themes"
 
 import { MdLightMode, MdNightlightRound } from "react-icons/md";
 
 import "./styles.sass";
 
-const Header = ({ toggleTheme, isDarkMode }) => {
+const Header = () => {
+  const {isDarkMode, toggleTheme} = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
