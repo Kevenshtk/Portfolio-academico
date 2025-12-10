@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useContext } from "react";
-import { ThemeContext } from "../../context/themes";
+import { ThemeContext } from "../../context/themes.js";
 
 import { FaPause, FaPlay, FaPlus, FaMinus } from "react-icons/fa6";
 import { FaHeadphones } from "react-icons/fa";
@@ -11,7 +11,7 @@ const MusicPlayer = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const toggleMusicPlayer = () => setIsOpen(!isOpen);
 

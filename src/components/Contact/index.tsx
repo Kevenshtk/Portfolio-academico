@@ -1,6 +1,6 @@
 import { useForm, Controller } from "react-hook-form";
 import { useContext } from "react";
-import { ThemeContext } from "../../context/themes";
+import { ThemeContext } from "../../context/themes.js";
 
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -12,6 +12,12 @@ import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
 import "./styles.sass";
+
+type formType = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 const schema = yup.object({
   name: yup.string().required("O nome é obrigatório"),
@@ -50,7 +56,7 @@ const Contact = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: formType) => {
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -147,7 +153,7 @@ const Contact = () => {
                   <>
                     <textarea
                       placeholder="Conte-me sobre suas ideias!"
-                      rows="5"
+                      rows={5}
                       {...field}
                     ></textarea>
                     <span>{errors.message && errors.message.message}</span>

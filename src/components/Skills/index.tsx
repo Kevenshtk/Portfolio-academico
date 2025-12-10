@@ -11,7 +11,13 @@ import { SiJquery, SiSpring, SiOracle, SiArduino } from "react-icons/si";
 
 import "./styles.sass";
 
-const skillsData = [
+type skillsDataType = {
+  name: string;
+  level: string;
+  icon: React.ReactElement;
+};
+
+const skillsData: skillsDataType[] = [
   { name: "HTML", level: "Intermediate", icon: <FaHtml5 /> },
   { name: "CSS", level: "Intermediate", icon: <FaCss3Alt /> },
   { name: "Jquery", level: "beginner", icon: <SiJquery /> },
@@ -26,7 +32,7 @@ const Skills = () => {
   const width = useWindowWidth();
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(width > 765 && width <= 900 ? 4 : 2);
-  const [currentSkills, setCurrentSkills] = useState([]);
+  const [currentSkills, setCurrentSkills] = useState<skillsDataType[]>([]);
 
   useEffect(() => {
     if (width > 900 && currentSkills.length !== skillsData.length) {

@@ -1,13 +1,13 @@
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import MusicPlayer from "./components/MusicPlayer";
-import BackToTop from "./components/BackToTop";
+import Header from "./components/Header/index.js";
+import Banner from "./components/Banner/index.js";
+import About from "./components/About/index.js";
+import Skills from "./components/Skills/index.js";
+import Projects from "./components/Projects/index.js";
+import Contact from "./components/Contact/index.js";
+import MusicPlayer from "./components/MusicPlayer/index.js";
+import BackToTop from "./components/BackToTop/index.js";
 
-import { ThemeContext } from "./context/themes";
+import { ThemeContext } from "./context/themes.js";
 
 import { useState, useEffect } from "react";
 

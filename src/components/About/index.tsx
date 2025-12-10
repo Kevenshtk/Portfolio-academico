@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/themes";
+import { ThemeContext } from "../../context/themes.js";
 
 import "./styles.sass";
 

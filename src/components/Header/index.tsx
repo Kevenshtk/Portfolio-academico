@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { ThemeContext } from "../../context/themes"
+import { ThemeContext } from "../../context/themes.js"
 
 import { MdLightMode, MdNightlightRound } from "react-icons/md";
 
@@ -18,7 +18,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
