@@ -1,12 +1,45 @@
-# React + Vite
+# 🎓 Portfólio Acadêmico – Keven Di Camargo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu Portfólio Acadêmico, onde reúno os principais projetos desenvolvidos ao longo do curso de Análise e Desenvolvimento de Sistemas na Fatec Lins.
 
-Currently, two official plugins are available:
+O objetivo deste portfólio é demonstrar minha evolução técnica, aplicação prática dos conhecimentos adquiridos e meu comprometimento com a área de tecnologia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objetivo do Portfólio
 
-## Expanding the ESLint configuration
+A finalidade deste portfólio é:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Demonstrar minha trajetória e evolução na Fatec
+
+- Registrar meus principais projetos acadêmicos
+
+- Reunir, em um único espaço, tudo o que desenvolvi durante o curso
+
+🔗[Acesse o portfólio](https://portfolio-academico-seven.vercel.app/)
+
+## ✨ Tecnologias Utilizadas
+
+<img align="center" src="https://skillicons.dev/icons?i=react,sass,ts" alt="icons"/>
+
+## 🎨 Estilo e Temas
+
+O portfólio possui duas versões de tema:
+
+- 🌞 Tema Claro: inspirado em cores suaves, tons pastel e vibes relaxantes.
+
+- 🌙 Tema Escuro: atmosfera noturna lo-fi, com sombras leves e contraste suave.
+
+Ambos os temas seguem:
+
+- Estética lo-fi moderna
+
+- Animações sutis
+
+- Layout limpo e minimalista
+
+## 📬 Contato
+
+📧 Email: kevendicamargo@gmail.com
+
+🔗 LinkedIn: [kevendicamargoelpidio](http://www.linkedin.com/in/kevendicamargoelpidio)
+
+💼 GitHub: [repositório](https://github.com/Kevenshtk/Fatec)
