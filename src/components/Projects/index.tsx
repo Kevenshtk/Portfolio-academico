@@ -237,6 +237,35 @@ const projectsData: projectsDataType[] = [
     repoUrl:
       "https://github.com/Kevenshtk/Fatec/tree/main/Quarto-Semestre/Java",
   },
+  {
+    id: 6,
+    title: "Jogo das Pilhas",
+    preview:
+      "https://camo.githubusercontent.com/13f213671bebb8875e6ecd605ba21331566bd7f5a3aeb9f7760002da483f1bc3/68747470733a2f2f6b6576656e7368746b2e6769746875622e696f2f6a6f676f2d6461732d70696c6861732f7075626c69632f6173736574732f696d672f74656c61732f74656c61496e696369616c2e706e67",
+    semester: "5° Semestre",
+    summary:
+      "Um jogo que testar seu raciocínio lógico através de estruturas condicionais.",
+    aboutProject: `O projeto foi desenvolvido no 5º semestre do curso, cursada no segundo semestre do ano de 2025 
+      e com a orientação dos professores Thiago Seti Patricio e Adriana de Bortoli. O projeto trata-se de uma aplicação 
+      web desenvolvida como ferramenta de pesquisa para um artigo acadêmico sobre o ensino de lógica de programação.`,
+    objectiveProject:
+      "O objetivo do projeto foi transformar conteúdos abstratos em algo mais acessível, visual e interativo, contribuindo para o engajamento dos alunos no aprendizado de operadores lógicos, condições e raciocínio estruturado.",
+    itemsObjective: [
+      {
+        title: "Descubra a Pilha: ",
+        content:
+          "o sistema separa as figuras e o jogador deve descobrir qual lógica foi utilizada.",
+      },
+      {
+        title: "Monte a Pilha: ",
+        content:
+          "o jogador organiza manualmente as figuras conforme a regra apresentada.",
+      },
+    ],
+    techStack: ["HTML", "CSS", "JavaScript"],
+    deployUrl: "https://kevenshtk.github.io/jogo-das-pilhas/",
+    repoUrl: "https://github.com/Kevenshtk/jogo-das-pilhas",
+  },
 ];
 
 const Projects = () => {
