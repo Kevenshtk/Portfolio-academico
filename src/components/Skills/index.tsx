@@ -5,9 +5,10 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaC,
-  FaJava
+  FaJava,
+  FaPython
 } from "react-icons/fa6";
-import { SiJquery, SiSpring, SiOracle, SiArduino } from "react-icons/si";
+import { SiJquery, SiSpring, SiOracle, SiArduino, SiMysql  } from "react-icons/si";
 
 import "./styles.sass";
 
@@ -25,7 +26,9 @@ const skillsData: skillsDataType[] = [
   { name: "Java", level: "beginner", icon: <FaJava /> },
   { name: "Spring", level: "beginner", icon: <SiSpring /> },
   { name: "Oracle", level: "beginner", icon: <SiOracle /> },
+  { name: "MySQL", level: "beginner", icon: <SiMysql /> },
   { name: "Arduino", level: "beginner", icon: <SiArduino /> },
+  { name: "Python", level: "beginner", icon: <FaPython /> },
 ];
 
 const Skills = () => {
